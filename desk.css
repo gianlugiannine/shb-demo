@@ -379,7 +379,6 @@ button.text-link {
   flex-wrap: wrap;
 }
 .desk-tabs button,
-.ask-prompts button,
 .role-switch button {
   border: 1px solid transparent;
   border-radius: 5px;
@@ -617,15 +616,11 @@ button.text-link {
   justify-content: space-between;
   color: #586c67;
 }
-.call-meta,
-.ask-prompts {
+.call-meta {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 12px;
-}
-.ask-prompts {
-  margin-top: 6px;
 }
 .call-back.text-link {
   display: none;
@@ -1511,6 +1506,28 @@ button.text-link {
 }
 .sidebar .view-switch {
   margin-top: 0;
+}
+#header-sig {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  min-height: 38px;
+  padding: .3rem .8rem;
+  border: 1px solid #c6d9da;
+  border-radius: 99px;
+  background: #f1f7f5;
+  color: #24524c;
+  font-size: .82rem;
+  font-weight: 650;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#header-sig:hover { background: #e2f0eb; }
+#crm-ask-sig { margin-top: .75rem; }
+@media (max-width: 760px) {
+  .utility:has(#header-sig) #header-apps,
+  .layout[data-page="assistant"] #header-apps { display: none; }
+  #header-sig { min-height: 40px; }
 }
 @media (max-width: 760px) {
   #header-apps [data-app-tab], .utility #finder-open, .utility .mobile-exit, #nav-toggle {

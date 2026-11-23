@@ -268,14 +268,6 @@ dt {
 dd {
   margin: 2px 0 8px;
 }
-.conversation {
-  white-space: pre-wrap;
-  border-bottom: 1px solid var(--line);
-  padding: 9px 0;
-}
-.conversation b {
-  display: block;
-}
 pre {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
